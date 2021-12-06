@@ -1,0 +1,169 @@
+* { box-sizing: border-box; }
+body {
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.50;
+    font-weight: 300;
+    margin: 0 auto;
+  }
+.name {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding: 20px;
+    font-size: 25px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+hr {
+    width: 100%;
+    height: 8px;
+    background-color: rgb(37, 37, 37);
+}
+legend {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 5%;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding: 0;
+    margin-top: 5%;
+} 
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+}
+form {
+    margin-top: 20px;
+}
+input[id="name"],
+input[id="email"],
+input[id="phone"],
+input[id="address"],
+input[id="city"],
+ select,
+ textarea {
+    padding: 15px;
+    width: 100%; 
+}
+input[id="name"]:focus,
+input[id="email"]:focus,
+input[id="phone"]:focus,
+input[id="address"]:focus,
+input[id="city"]:focus, 
+input[id="zip"]:focus,
+ select:focus,
+ textarea:focus {
+    background-color: #969696;
+    outline-color: rgba(60, 129, 194, 0.98);
+    transition: all .5s ease-out;
+ }
+h1, p {
+    text-align: center;
+}
+input[id="zip"] {
+    padding: 15px;
+    width:50%;
+}
+.newsletter-div, .format, .text-area {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+input[id="html"],
+input[id="css"],
+input[id="javascript"],
+input[id="html_format"],
+input[id="plain_text_format"] {
+    margin-right: 5%;
+    margin-top: 5%;
+}
+input::placeholder,
+text::placeholder {
+    font-size: 1em;
+    text-align: right;
+    font-weight: 300;
+}
+button {
+    display: block;
+    font-size: 1.3em;
+    color:white;
+    border: 1px solid rgb(13, 194, 179);
+    border-radius: 5px;
+    border-width: 10px 10px 25px;
+    background-color: rgb(31, 192, 179);
+    width: 90%; 
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-left: 5%;       
+}
+@media (min-width: 768px) {
+    hr {
+        width: 50%;
+        height: 8px;
+        background-color: rgb(37, 37, 37);
+    }
+    legend {
+        margin-left:25%;
+    }
+    .info {
+        flex-direction: row;
+        align-items: center;
+        margin-left:22%;
+        margin-right: 22%;
+    }
+    label[for="name"],
+    label[for="email"],
+    label[for="phone"],
+    label[for="address"],
+    label[for="city"], 
+    label[for="state"] { 
+        width: 50%;
+        margin-left: 2.5%; 
+    }
+    input, 
+    select {
+        margin-right: 2.5%;
+    }
+    label[for="zip"] {
+        width: 50%;
+        margin-left: 2.5%;
+    }
+    input[id="zip"] {
+        width: 30%;
+        margin-right: 46%;
+    }
+    label[class="title-2"] {
+        margin-left: 22%;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-left: 22%;
+    }
+    .text-area {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    button {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
